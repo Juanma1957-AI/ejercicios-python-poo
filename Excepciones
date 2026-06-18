@@ -1,0 +1,39 @@
+def main():
+
+   
+    try:
+        print("Ingresando al primer try")
+
+        cociente = 10000 / 0  
+
+        
+        print("Después de la división")
+
+    except ZeroDivisionError:
+        
+        print("División por cero")
+
+    finally:
+        
+        print("Ingresando al primer finally")
+
+    try:
+        print("Ingresando al segundo try")
+
+        objeto = None
+        objeto.to_string()  
+
+        print("Imprimiendo objeto")
+
+    except ZeroDivisionError:
+        print("División por cero")
+
+    except Exception:
+        print("Ocurrió una excepción")
+
+    finally:
+        print("Ingresando al segundo finally")
+
+
+if __name__ == "__main__":
+    main()
